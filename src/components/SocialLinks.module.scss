@@ -19,6 +19,26 @@
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .social-links {
+        position: relative;
+        top: 0;
+        left: 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: normal;
+        align-items: normal;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .social-links div {
+        margin: 15px;
+        position: relative;
+    }
+}
+
 @media (max-width: 1200px) {
     .social-links {
         position: relative;

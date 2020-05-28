@@ -23,3 +23,19 @@ footer {
         text-align: left;
     }
 }
+
+@media (max-width: 768px) {
+
+    footer {
+        .container {
+            display: grid;
+            grid-template-columns: 100%;
+            max-width: 100%;
+            padding: 10px;
+        }
+    
+        .copyright {
+            text-align: center;
+        }
+    }
+}
