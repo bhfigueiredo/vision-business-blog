@@ -1,0 +1,42 @@
+.article-list {
+    display: flex;
+    grid-template-columns: 50% 50%;
+
+    .article-box {
+        margin-bottom: 30px;
+        display: inline-block;
+        width: auto;
+        transition: all 0.25s ease;
+        background: rgba(238,234,223, 0.8);
+        border-radius: 8px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .right {
+            padding: 30px;
+            color: #3c4856;
+            margin-top: -20px;
+
+            .title{
+                color: rgb(177,186,159);
+                text-decoration: underline;
+            }
+
+            .meta {
+                margin-top: -15px;
+                margin-bottom: 20px;
+                font-size: 0.9rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .article-list {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}

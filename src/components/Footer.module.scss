@@ -1,0 +1,25 @@
+footer {
+    background-color: rgb(238,234,223);;
+    padding: 10px 0 10px 0;
+    color: #4f647d;
+
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 50rem;
+        padding: 10px;
+    }
+
+    a {
+        color: #4f647d;
+        margin: 10px;
+
+        &:hover {
+            color: hsla(0,0%,0%,0.9);
+        }
+    }
+
+    .copyright {
+        text-align: left;
+    }
+}
