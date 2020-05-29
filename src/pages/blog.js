@@ -10,8 +10,7 @@ const Blog = ({ data }) => (
   <Layout>
     <main>
       <Helmet title={`Blog | ${config.siteTitle}`} />
-      <PostListing postEdges={data.allMarkdownRemark.edges} />
-      {/* <BlogListing blogEdges={data.allMarkdownRemark.edges} /> */}
+      <BlogListing blogEdges={data.allMarkdownRemark.edges} />
     </main>
   </Layout>
 )

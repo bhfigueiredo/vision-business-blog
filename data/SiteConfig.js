@@ -3,13 +3,13 @@ const config = {
   siteTitleShort: 'Vision Business', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Vision Business', // Alternative site title for SEO.
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://visionbusiness.netlify.com', // Domain of your website without pathPrefix.
+  siteUrl: 'https://vision-business.netlify.app', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription:
     'Site aonde você encontrará todos produtos da Vision Business', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
-  siteFBAppID: '1825356251115265', // FB Application ID for using app insights
-  googleAnalyticsID: 'UA-161211056-1', // GA tracking ID.
+  siteFBAppID: '', // FB Application ID for using app insights
+  googleAnalyticsID: 'UA-75223939-3', // GA tracking ID.
   dateFromFormat: 'YYYY-MM-DD', // Date format used in the frontmatter.
   dateFormat: 'DD/MM/YYYY', // Date format for display.
   userName: 'Vision Business', // Username to display in the author segment.

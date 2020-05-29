@@ -32,9 +32,7 @@ export const pageQuery = graphql`
           fields {
             slug
             date(formatString: "MMMM DD, YYYY")
-            valor
             subtitle
-            linkCheckout
           }
           excerpt
           timeToRead
