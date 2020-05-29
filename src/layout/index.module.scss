@@ -79,6 +79,12 @@ img[alt=consultoria-instagram] {
   }
 }
 
+@media (min-width: 400px) and (max-width: 768px) {
+  .header-site{
+    background: url("../../static/header-mobile.jpeg");
+  }
+}
+
 @media only screen and (max-width: 768px) {
   main {
     margin-left: auto;
