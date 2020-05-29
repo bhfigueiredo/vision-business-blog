@@ -13,17 +13,17 @@ const Header = () => (
     </h1>
     <nav>
       <ul className={styles.mainNav}>
-        {/* <li>
-          <Link to="/about" activeClassName={styles.activeNav}>
-            About
+        <li>
+          <Link to="/blog" activeClassName={styles.activeNav}>
+            Blog
           </Link>
-        </li> */}
+        </li>
         <Categories activeClassName={styles.activeNav} />
-        {/* <li>
+        <li>
           <Link to="/contact" activeClassName={styles.activeNav}>
-            Contact
+            Contato
           </Link>
-        </li> */}
+        </li>
       </ul>
     </nav>
   </header>

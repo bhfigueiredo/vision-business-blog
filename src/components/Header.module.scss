@@ -13,6 +13,11 @@ header {
   margin-right: auto;
   height: 70px;
 
+  h1 {
+    margin: 0 auto;
+    padding-left: 10em;
+  }
+
   a {
     text-decoration: none;
     color: #3c4856;
@@ -42,6 +47,7 @@ header {
   .activeNav {
     color: #4f647d;
     font-weight: 700;
+    text-align: center;
   }
 }
 
@@ -73,10 +79,20 @@ header {
   header {
     display: block;
     height: 120px;
+
+      h1 {
+        padding-left: 8em;
+      }
+  }
+
+  .main-nav {
+    margin: 0 auto;
   }
 
   nav {
     margin-top: -20px;
+    margin: 0 auto;
+    display: grid;
 
     ul {
       margin: 0;
@@ -90,6 +106,9 @@ header {
     strong {
       display: none;
     }
+    h1 {
+      padding-left: 0;
+    }
   }
 
   .main-nav {
@@ -101,7 +120,7 @@ header {
   }
 
   nav {
-    display: none;
+    display: inline-block;
   }
 }
 
@@ -109,6 +128,9 @@ header {
 
   header {
     text-align: center;
+      h1 {
+        padding-left: 0;
+      }
   }
 
   header nav a {
@@ -119,6 +141,6 @@ header {
   }
 
   nav {
-    display: none;
+    display: inline-block;
   }
 }

@@ -1,17 +1,17 @@
 @font-face{
-  font-family: "CormorantGaramond-Regular";
-  src: url('../fonts/CormorantGaramond-Regular.ttf');
+  font-family: "Montserrat-Light";
+  src: url('../fonts/Montserrat/Montserrat-Light.ttf');
 }
 
 @font-face{
-  font-family: "CormorantGaramond-SemiBold";
-  src: url('../fonts/CormorantGaramond-SemiBold.ttf');
+  font-family: "Montserrat-Regular";
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
 body {
   margin: 0;
   background: #fafbfb;
-  font-family: 'CormorantGaramond-Regular';
+  font-family: 'Montserrat-Light';
   font-weight: 600
 }
 
@@ -22,13 +22,12 @@ h4,
 h5,
 h6 {
   margin-top: 1rem;
-  font-family: 'CormorantGaramond-SemiBold';
+  font-family: 'Montserrat-Regular';
 }
 
 main {
   margin-left: auto;
   margin-right: auto;
-  max-width: 65%;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -54,6 +53,30 @@ img[alt=consultoria-youtube] {
 
 img[alt=consultoria-instagram] { 
   width: 100%; 
+}
+
+.background-header{
+  background: rgba(0,0,0,0.4);
+  height: 418px;
+}
+
+.header-site{
+  background: url("../../static/header.jpeg");
+  background-repeat: no-repeat;
+  height: 420px;
+  margin: 0 auto;
+  color: #fff;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-top: -20px;
+  h1 {
+    padding-top: 5em;
+    color: #fff;
+  }
+  h2 {
+    color: #fff;
+  }
 }
 
 @media only screen and (max-width: 768px) {

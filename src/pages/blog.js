@@ -2,42 +2,34 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
-import PostListing from '../components/PostListing'
 import config from '../../data/SiteConfig'
-import styles from './category.module.scss'
+import BlogListing from '../components/BlogListing'
+import PostListing from '../components/PostListing'
 
-const CategoryTemplate = ({ data, pageContext }) => (
+const Blog = ({ data }) => (
   <Layout>
     <main>
-      <Helmet title={` "${pageContext.category}" - ${config.siteTitle}`} />
-      <h1 className={styles.categoryHeader}>
-        Todos os
-        {' '}
-        {pageContext.category}
-      </h1>
-      <span className={styles.categorySubHeader}>para criadores de conteúdo e empreendedores</span>
+      <Helmet title={`Blog | ${config.siteTitle}`} />
       <PostListing postEdges={data.allMarkdownRemark.edges} />
+      {/* <BlogListing blogEdges={data.allMarkdownRemark.edges} /> */}
     </main>
   </Layout>
 )
 
-export default CategoryTemplate
+export default Blog
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query CategoryPage($category: String) {
+  query BlogQuery {
     allMarkdownRemark(
-      limit: 1000
+      limit: 2000
       sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { categories: { in: [$category] } } }
+      filter: {frontmatter: {categories: {eq: null}}}
     ) {
-      totalCount
       edges {
         node {
           fields {
             slug
             date(formatString: "MMMM DD, YYYY")
-            valor
             subtitle
           }
           excerpt
@@ -47,7 +39,6 @@ export const pageQuery = graphql`
             tags
             cover
             date
-            categories
           }
         }
       }

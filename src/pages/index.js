@@ -5,9 +5,10 @@ import Layout from '../layout'
 import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
+import BlogListing from '../components/BlogListing'
 
 const Index = ({ data }) => (
-  <Layout>
+  <Layout>    
     <main>
       <Helmet title={config.siteTitle} />
       <SEO />
@@ -24,6 +25,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [fields___date], order: DESC }
+      filter: {frontmatter: {categories: {eq: "Produtos"}}}
     ) {
       edges {
         node {

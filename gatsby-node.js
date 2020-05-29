@@ -8,6 +8,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   let slug;
   let valor;
   let subtitle;
+  
   let linkCheckout;
   if (node.internal.type === "MarkdownRemark") {
     const fileNode = getNode(node.parent);
@@ -144,7 +145,9 @@ exports.createPages = async ({ graphql, actions }) => {
         subtitle: edge.node.fields.subtitle
       }
     });
+
   });
+
  // Generate link foreach tag page
   tagSet.forEach(tag => {
     createPage({
@@ -155,6 +158,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     });
   });
+
   // Generate link foreach category page
   categorySet.forEach(category => {
     createPage({

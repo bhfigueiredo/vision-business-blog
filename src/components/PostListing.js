@@ -6,7 +6,6 @@ const PostListing = ({ postEdges }) => {
   const getPostList = () => {
     const postList = []
     postEdges.forEach(postEdge => {
-      {console.log(postEdge)}
       postList.push({
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
@@ -29,15 +28,14 @@ const PostListing = ({ postEdges }) => {
     <div className={styles.articleList}>
       {/* Your post list here. */
       postList.map(post => (
-        <Link style={{padding: `10px`}} to={post.path} key={post.title}>
+        <Link className={styles.articleContainer} to={post.path} key={post.title}>
           <article className={styles.articleBox}>
             <div className={styles.right}>
               <h3 className={styles.title}>{post.title}</h3>
               <div className={styles.meta}>
                 <span><b>{post.subtitle}</b></span>
               </div>
-              <img style={{ width: 300, height: 200 }} src={post.cover}></img>
-              {/* <p>{post.excerpt}</p> */}
+              <img style={{ width: 400, height: 300 }} src={post.cover}></img>
             </div>
           </article>
         </Link>
