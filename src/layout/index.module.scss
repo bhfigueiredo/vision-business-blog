@@ -79,9 +79,21 @@ img[alt=consultoria-instagram] {
   }
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 500px) {
   .header-site{
     background: url("../../static/header-mobile.jpeg");
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .header-site{
+    background: url("../../static/header-mobile-600.jpeg");
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .header-site{
+    background: url("../../static/header-mobile-800.jpeg");
   }
 }
 

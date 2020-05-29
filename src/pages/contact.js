@@ -11,7 +11,7 @@ const ContactPage = () => (
       <Helmet title={`Contact | ${config.siteTitle}`} />
       <article className={styles.contactContainer}>
         <div className={styles.contactBox}>
-          <img style={{ width: 800, height: 700 }} src={contactImage}/>
+          <img className={styles.contactImage} src={contactImage}/>
           <div className={styles.contactMessage}>
             <p className={styles.header}>ENVIA-ME UMA MENSAGEM</p>
             <p>Tens dúvidas sobre algum dos produtos, serviços ou artigos do site ou uma proposta que gostarias de me apresentar?</p> 

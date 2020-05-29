@@ -14,6 +14,11 @@
         font-size: 1.4rem;
     }
 
+    .contact-image {
+        width: 800px;
+        height: 700px;
+    }
+
     .contact-message {
         display: block;
         padding: 2em 5em;
@@ -59,6 +64,11 @@
         .contact-box {
             display: grid;
         }
+
+        .contact-image {
+            width: 800px;
+            height: 700px;
+        }
     
         .contact-message {    
             form {    
@@ -70,13 +80,18 @@
     }
 }
 
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 700px) {
 
     .contact-container {
         display: grid;        
     
         .contact-box {
             display: grid;
+        }
+
+        .contact-image {
+            width: 370px;
+            height: 400px;
         }
     
         .contact-message {    
